@@ -30,4 +30,4 @@ window.addEventListener("click", function (e) {
     humberger.classList.remove("humberger-active");
     navMenu.classList.add("hidden");
   }
-})
+});
