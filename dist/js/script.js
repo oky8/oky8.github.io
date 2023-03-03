@@ -4,10 +4,12 @@ window.onscroll = function () {
   const fixednav = header.offsetTop;
   const toTop = document.querySelector("#to-top");
 
+
   if (window.pageYOffset > fixednav) {
     header.classList.add("navbar-fixed");
     toTop.classList.remove("hidden");
     toTop.classList.add("flex");
+
   } else {
     header.classList.remove("navbar-fixed");
     toTop.classList.remove("flex");
