@@ -10,15 +10,15 @@
   <body>
     <!-- header start -->
     <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-primary bg-transparent lg:bg-primary"
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-primary bg-transparent lg:bg-primary lg:dark:bg-black lg:dark:bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-1">
             <a
               href="#home"
-              class="block py-6 text-lg font-bold text-tertiary duration-700 ease-in-out hover:-skew-y-6 hover:scale-110 hover:transition-all"
-              ><span class="border-4 border-double border-tertiary px-2 py-2"
+              class="block py-6 text-lg font-bold text-tertiary dark:text-slate-50 duration-700 ease-in-out hover:-skew-y-6 hover:scale-110 hover:transition-all"
+              ><span class="border-4 border-double border-tertiary px-2 py-2 dark:border-slate-50"
                 >OE-</span
               ></a
             >
@@ -42,61 +42,61 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-primary py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-primary py-5 shadow-lg dark:bg-black dark:bg-transparent dark:shadow-md dark:shadow-stone-50 lg:dark:shadow-none lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none "
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Protofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#client"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Client</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Blog</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#gallery"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Gallery</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 lg:text-xs"
+                    class="mx-8 flex py-2 text-base text-secondary dark:text-slate-50 group-hover:text-emerald-200 lg:text-xs"
                     >Kontak Saya</a
                   >
                 </li>
-                <li class="flex items-center pl-8">
+                <li class="mt-2 flex items-center pl-8">
                   <div class="flex">
-                    <span class="mr-2 text-xs text-quarternary">light</span>
+                    <span class="mr-2 text-xs text-quarternary dark:text-white">light</span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
                       <div
@@ -107,7 +107,7 @@
                         ></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-xs text-quarternary">Dark</span>
+                    <span class="ml-2 text-xs text-quarternary dark:text-white">Dark</span>
                   </div>
                 </li>
               </ul>
@@ -123,23 +123,23 @@
       <div class="container">
         <div class="flex flex-wrap lg:px-20">
           <div class="mb-12 w-full self-center px-4">
-            <h1 class="text-base font-semibold text-primary lg:text-2xl">
+            <h1 class="text-base font-semibold text-primary lg:text-2xl dark:text-red-500">
               Hi, Nama Saya
               <span
-                class="mt-2 block text-4xl font-extrabold text-primary lg:text-6xl"
+                class="mt-2 block text-4xl font-extrabold text-primary lg:text-6xl dark:text-slate-50"
                 >Okky Efand</span
               >
             </h1>
-            <h2 class="mt-8 mb-12 text-3xl text-neutral-600 lg:text-4xl">
+            <h2 class="mt-8 mb-12 text-3xl text-neutral-600 lg:text-4xl dark:text-slate-50">
               Web Developer
-              <span class="mt-5 block text-xl text-neutral-600 lg:text-2xl"
+              <span class="mt-5 block text-xl text-neutral-600 lg:text-2xl dark:text-slate-50"
                 >Merancang dan membangun website.</span
               >
             </h2>
             <div class="w-full py-8 duration-500 hover:scale-y-110">
               <a
                 href="#"
-                class="mt-12 rounded-xl border border-primary bg-tertiary px-12 py-4 font-mono text-base font-semibold text-primary transition duration-300 ease-in-out hover:bg-emerald-300 hover:bg-opacity-70"
+                class="mt-12 rounded-3xl border border-primary bg-tertiary dark:bg-red-500 px-12 py-4 font-mono text-base font-semibold text-primary dark:text-slate-50 transition duration-300 ease-in-out hover:bg-emerald-300 hover:bg-opacity-70"
                 >Resume</a
               >
             </div>
@@ -278,36 +278,36 @@
     <hr class="my-1" />
 
     <!-- about section start -->
-    <section id="about" class="bg-tertiary pt-36 pb-32">
+    <section id="about" class="bg-tertiary pt-36 pb-32 dark:bg-slate-900">
       <div class="container">
         <div class="flex flex-wrap lg:px-20">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h1
-              class="mb-8 text-base font-bold uppercase text-primary lg:text-xl"
+              class="mb-8 text-base font-bold uppercase text-primary dark:text-red-500 lg:text-xl"
             >
               Tentang Saya
             </h1>
             <p
-              class="mt-2 mb-4 text-justify text-xs font-medium text-slate-600 lg:text-base"
+              class="mt-2 mb-4 text-justify text-xs font-medium text-slate-600 dark:text-slate-50 lg:text-base"
             >
               Halo! Nama saya Okky dan saya senang membuat hal-hal yang hidup di
               internet. Ketertarikan saya pada pengembangan web dimulai pada
               saat saya menjalani perkuliahan pada tahun 2017.
             </p>
             <p
-              class="mb-4 text-justify text-xs font-medium text-slate-600 lg:text-base"
+              class="mb-4 text-justify text-xs font-medium dark:text-slate-50 text-slate-600 lg:text-base"
             >
               Saya mendapat banyak pelajaran mengenai website semenjak saya
               mulai mengerjakan project-project kecil, disana saya mulai ingin
               berkembang menjadi lebih profesional.
             </p>
             <p
-              class="mb-4 text-justify text-xs font-medium text-slate-600 lg:text-base"
+              class="mb-4 text-justify text-xs font-medium dark:text-slate-50 text-slate-600 lg:text-base"
             >
               Berikut adalah beberapa teknologi yang telah saya gunakan
               baru-baru ini:
             </p>
-            <div class="flex items-center">
+            <div class="flex mt-4 items-center">
               <!-- icon html -->
               <a
                 href="www.linkedin.com/in/okky-efand"
@@ -409,12 +409,12 @@
           <div class="w-full self-end px-8 lg:w-1/2">
             <div class="mt-2 items-center justify-center lg:mt-9 lg:flex">
               <div
-                class="rounded-2xl border-2 border-primary p-1 shadow-xl duration-700 hover:scale-75"
+                class="rounded-2xl border-2 border-primary dark:border-red-500 p-1 shadow-xl duration-700 hover:scale-75"
               >
                 <img
                   src="/dist/img/pp.png"
                   alt="profile_photo"
-                  class="mx-auto block -translate-x-4 rounded-2xl border border-primary shadow-2xl"
+                  class="mx-auto block -translate-x-4 rounded-2xl border border-primary dark:border-red-500 shadow-2xl"
                 />
               </div>
             </div>
@@ -427,17 +427,17 @@
     <hr class="my-1" />
 
     <!-- portofolio section start -->
-    <section id="portofolio" class="bg-secondary pt-36 pb-16">
+    <section id="portofolio" class="bg-secondary pt-36 pb-16 dark:bg-zinc-900">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-w-xl mx-auto mb-10 text-center">
-            <h4 class="mt-0 mb-3 text-lg font-bold text-primary">Protofolio</h4>
+            <h4 class="mt-0 mb-3 text-lg font-bold text-primary dark:text-red-500">Protofolio</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-slate-700 sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-slate-700 dark:text-slate-50 sm:text-2xl lg:text-3xl"
             >
               Project Terbaru
             </h2>
-            <p class="text-md font-medium text-black">
+            <p class="text-md font-medium text-black dark:text-slate-100">
               Di sini Anda akan menemukan beberapa proyek pribadi dan klien yang
               saya buat dengan setiap proyek berisi studi kasusnya sendiri
             </p>
@@ -451,7 +451,7 @@
             <div
               class="overflow-hidden rounded-lg shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 E-Commerce Putri Js Cake & Bakery
               </h3>
               <img
@@ -460,7 +460,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini saya buat untuk menyelesaikan tugas akhir perkuliahan
               saya, project ini merancang website e-commerce untuk pemesanan dan
               penjualan kue.
@@ -470,7 +470,7 @@
             <div
               class="overflow-hidden rounded-md shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 Puskesmas Tanjung Paku
               </h3>
               <img
@@ -479,7 +479,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini merupakan website untuk menganalisa kapuasan pelayanan
               pada Puskesmas Tanjung Paku menggunakan metode Servqual.
             </p>
@@ -488,7 +488,7 @@
             <div
               class="overflow-hidden rounded-md shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 Nadin Jaya Sibolga
               </h3>
               <img
@@ -497,7 +497,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini merancang sistem informasi rental mobil berbasis
               website.
             </p>
@@ -506,7 +506,7 @@
             <div
               class="overflow-hidden rounded-md shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 Bukittinggi Furni Center
               </h3>
               <img
@@ -515,7 +515,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini merancang sistem informasi pemesanan furniture
               berbasis website.
             </p>
@@ -524,7 +524,7 @@
             <div
               class="overflow-hidden rounded-md shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 Apotek Asy Sifa Batusangkar
               </h3>
               <img
@@ -533,7 +533,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini merancang sistem informasi pengelolaan data stok
               barang pada apotek asysifa Batusangkar berbasis website.
             </p>
@@ -542,7 +542,7 @@
             <div
               class="overflow-hidden rounded-md shadow-sm duration-500 hover:scale-110"
             >
-              <h3 class="mt-2 mb-2 font-semibold text-black">
+              <h3 class="mt-2 mb-2 font-semibold text-black dark:text-red-500">
                 CV. Torsi Janggut
               </h3>
               <img
@@ -551,7 +551,7 @@
                 class="w-full rounded-lg"
               />
             </div>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify dark:text-slate-300">
               Project ini merancang sistem informasi pemesanan tiket pada CV.
               Torsi Janggut berbasis website.
             </p>
@@ -564,17 +564,17 @@
     <hr class="my-1" />
 
     <!-- client section start -->
-    <section id="client" class="bg-tertiary pt-24 pb-28 lg:pt-32 lg:pb-36">
+    <section id="client" class="bg-tertiary pt-24 pb-28 lg:pt-32 lg:pb-36 dark:bg-stone-900">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-w-xl mx-auto mb-4 text-center lg:mb-6">
-            <h4 class="mt-0 mb-4 text-lg font-bold text-secondary">Clients</h4>
+            <h4 class="mt-0 mb-4 text-lg font-bold text-secondary dark:text-red-500">Clients</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-secondary sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-secondary dark:text-slate-50 sm:text-2xl lg:text-3xl"
             >
               Yang Pernah Bekerja Sama
             </h2>
-            <p class="text-md font-medium text-primary">
+            <p class="text-md font-medium text-primary dark:text-zinc-200">
               Hubungan kerja sama yang baik telah dilakukan bersama pihak-pihak
               bersangkutan dengan lancar dengan tujuan bersama
             </p>
@@ -631,17 +631,17 @@
     <hr class="my-1" />
 
     <!-- blog section start -->
-    <section id="blog" class="bg-secondary pt-28 pb-28">
+    <section id="blog" class="bg-secondary pt-28 pb-28 dark:bg-slate-900">
       <div class="container">
         <div class="w-full py-4 lg:px-20">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mt-0 mb-3 text-lg font-bold text-primary">Blog</h4>
+            <h4 class="mt-0 mb-3 text-lg font-bold text-primary dark:text-red-500">Blog</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-primary sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-primary dark:text-zinc-50 sm:text-2xl lg:text-3xl"
             >
               Tulisan Saya
             </h2>
-            <p class="text-md font-medium text-tertiary">
+            <p class="text-md font-medium text-tertiary dark:text-zinc-300">
               Apakah tulisan saya menarik?
               <br />
               Kunjungi halaman tulisan saya, temukan tulisan yang anda cari!
@@ -653,7 +653,7 @@
               class="w-full px-4 duration-500 hover:scale-95 md:w-1/2 lg:w-1/3"
             >
               <div
-                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg"
+                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg dark:bg-zinc-200"
               >
                 <img
                   src="/dist/img/blog1.jpg"
@@ -676,7 +676,7 @@
                   </p>
                   <a
                     href="#"
-                    class="rounded-xl bg-emerald-300 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
+                    class="rounded-xl bg-emerald-300 dark:bg-red-500 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
                     >Baca Selengkapnya</a
                   >
                 </div>
@@ -686,7 +686,7 @@
               class="w-full px-4 duration-500 hover:scale-95 md:w-1/2 lg:w-1/3"
             >
               <div
-                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg"
+                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg dark:bg-zinc-200"
               >
                 <img
                   src="/dist/img/blog2.jpg"
@@ -709,7 +709,7 @@
                   </p>
                   <a
                     href="#"
-                    class="rounded-xl bg-emerald-300 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
+                    class="rounded-xl bg-emerald-300 dark:bg-red-500 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
                     >Baca Selengkapnya</a
                   >
                 </div>
@@ -719,7 +719,7 @@
               class="w-full px-4 duration-500 hover:scale-95 md:w-1/2 lg:w-1/3"
             >
               <div
-                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg"
+                class="mb-10 overflow-hidden rounded-xl bg-tertiary shadow-lg dark:bg-zinc-200"
               >
                 <img
                   src="/dist/img/blog4.jpg"
@@ -741,7 +741,7 @@
                   </p>
                   <a
                     href="#"
-                    class="rounded-xl bg-emerald-300 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
+                    class="rounded-xl bg-emerald-300 dark:bg-red-500 py-2 px-3 text-lg font-medium text-primary shadow-lg hover:opacity-70"
                     >Baca Selengkapnya</a
                   >
                 </div>
@@ -757,17 +757,17 @@
     <hr class="my-1" />
 
     <!-- gallery section start -->
-    <section id="gallery" class="bg-primary pt-32 pb-32">
+    <section id="gallery" class="bg-primary pt-32 pb-32 dark:bg-slate-800">
       <div class="container">
         <div class="w-full py-4 lg:px-20">
           <div class="mx-auto mb-12 max-w-xl text-center">
-            <h4 class="mt-0 mb-3 text-lg font-bold text-secondary">Gallery</h4>
+            <h4 class="mt-0 mb-3 text-lg font-bold text-secondary dark:text-red-500">Gallery</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-secondary sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-secondary dark:text-slate-50 sm:text-2xl lg:text-3xl"
             >
               My Gallery
             </h2>
-            <p class="text-md font-medium text-tertiary">
+            <p class="text-md font-medium text-tertiary dark:text-zinc-400">
               Hubungan kerja sama yang baik telah dilakukan bersama pihak-pihak
               bersangkutan dengan lancar dengan tujuan bersama
             </p>
@@ -867,17 +867,17 @@
     <!-- gallery section end -->
 
     <!-- contact section start -->
-    <section id="contact" class="bg-secondary pt-32 pb-32">
+    <section id="contact" class="bg-secondary pt-32 pb-32 dark:bg-neutral-900">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-10 max-w-xl text-center">
-            <h4 class="mt-0 mb-3 text-lg font-bold text-primary">Contact</h4>
+            <h4 class="mt-0 mb-3 text-lg font-bold text-primary dark:text-red-500">Contact</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-primary sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-primary dark:text-neutral-50 sm:text-2xl lg:text-3xl"
             >
               Hubungi Saya
             </h2>
-            <p class="text-md font-medium text-primary">
+            <p class="text-md font-medium text-primary dark:text-neutral-400">
               Apakah Anda memiliki pertanyaan atau hanya ingin menyapa, saya
               akan mencoba yang terbaik untuk menghubungi Anda kembali!
             </p>
@@ -887,38 +887,38 @@
         <form>
           <div class="mx-auto w-full lg:w-2/3">
             <div class="mb-8 w-full px-4">
-              <label for="name" class="text-base font-semibold text-slate-700"
+              <label for="name" class="text-base font-semibold text-slate-700 dark:text-stone-50"
                 >Nama</label
               >
               <input
                 type="text"
                 id="name"
-                class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 focus:border-primary focus:outline-none focus:ring-primary"
+                class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               />
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="email" class="text-base font-semibold text-slate-700"
+              <label for="email" class="text-base font-semibold text-slate-700 dark:text-stone-50"
                 >Email</label
               >
               <input
                 type="email"
                 id="email"
-                class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 focus:border-primary focus:outline-none focus:ring-primary"
+                class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               />
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="pesan" class="text-base font-semibold text-slate-700"
+              <label for="pesan" class="text-base font-semibold text-slate-700 dark:text-stone-50"
                 >Pesan</label
               >
               <textarea
                 type="text"
                 id="pesan"
-                class="focus: w-full rounded-md bg-tertiary p-28 text-black ring-1 focus:border-primary focus:outline-none focus:ring-primary"
+                class="focus: w-full rounded-md bg-tertiary p-4 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
-                class="w-full rounded-full bg-emerald-300 py-3 px-8 text-base font-bold text-primary transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg"
+                class="w-full rounded-full bg-quarternary dark:bg-red-500 py-3 px-8 text-base font-bold text-primary transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg"
               >
                 Kirim
               </button>
@@ -930,12 +930,12 @@
     <!-- contact section end -->
 
     <!-- footer start -->
-    <footer class="bg-primary pt-12 pb-10">
+    <footer class="bg-primary pt-12 pb-10 dark:bg-gray-900">
       <div class="container">
         <div class="flex flex-wrap lg:px-10 lg:py-4">
           <div class="mb-12 w-full px-4 font-medium text-slate-200 md:w-1/3">
             <h1
-              class="mb-4 text-xl font-bold text-secondary duration-500 hover:scale-105"
+              class="mb-4 text-xl font-bold text-secondary dark:text-red-500 duration-500 hover:scale-105"
             >
               Hubungi Saya
             </h1>
@@ -953,7 +953,7 @@
             class="mb-12 w-full px-4 font-medium md:w-1/3 md:rounded-b-xl md:border-l-2 md:border-quarternary"
           >
             <h1
-              class="mb-4 text-xl font-semibold text-secondary duration-500 hover:scale-105"
+              class="mb-4 text-xl font-semibold text-secondary dark:text-red-500 duration-500 hover:scale-105"
             >
               Kategori Tulisan
             </h1>
@@ -985,7 +985,7 @@
             class="mb-12 w-full px-4 font-medium md:w-1/3 md:rounded-b-xl md:border-l-2 md:border-quarternary"
           >
             <h1
-              class="mb-4 text-xl font-semibold text-secondary duration-500 hover:scale-105"
+              class="mb-4 text-xl font-semibold text-secondary dark:text-red-500 duration-500 hover:scale-105"
             >
               Tautan
             </h1>
@@ -1164,7 +1164,7 @@
     <!-- tombol up start -->
     <a
       href="#home"
-      class="fixed bottom-4 right-4 z-[9999] hidden rounded-full bg-slate-500 p-4 hover:animate-bounce"
+      class="fixed bottom-4 right-4 z-[9999] hidden rounded-full bg-slate-500 dark:bg-red-500 p-4 hover:animate-bounce"
       id="to-top"
     >
       <span class="block items-center border-primary"
@@ -1186,7 +1186,7 @@
     <a
       href="mailto:okkyefand8@gmail.com"
       id="to-mail"
-      class="fixed bottom-1/3 right-4 z-[9999] hidden p-4 font-mono text-emerald-700 lg:block"
+      class="fixed bottom-1/3 right-4 z-[9999] hidden p-4 font-mono text-emerald-700 dark:text-emerald-400 lg:block"
     >
       <p class="to-mail duration-500 hover:-translate-y-4 hover:text-white">
         okkyefand8@gmail.com
