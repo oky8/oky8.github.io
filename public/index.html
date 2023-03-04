@@ -42,7 +42,7 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-primary py-5 shadow-lg dark:bg-black dark:bg-transparent dark:shadow-md dark:shadow-stone-50 lg:dark:shadow-none lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none "
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-primary py-5 shadow-lg dark:bg-black dark:shadow-md dark:shadow-stone-50 lg:dark:shadow-none lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
@@ -96,11 +96,11 @@
                 </li>
                 <li class="mt-2 flex items-center pl-8">
                   <div class="flex">
-                    <span class="mr-2 text-xs text-quarternary dark:text-white">light</span>
+                    <span class="mr-2 text-xs text-quarternary dark:text-white">Light <span></span></span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
                       <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-quarternary p-1"
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-quarternary dark:bg-red-500 p-1"
                       >
                         <div
                           class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500"
@@ -136,10 +136,10 @@
                 >Merancang dan membangun website.</span
               >
             </h2>
-            <div class="w-full py-8 duration-500 hover:scale-y-110">
+            <div class="w-8 py-8 duration-500 hover:-translate-y-3">
               <a
                 href="#"
-                class="mt-12 rounded-3xl border border-primary bg-tertiary dark:bg-red-500 px-12 py-4 font-mono text-base font-semibold text-primary dark:text-slate-50 transition duration-300 ease-in-out hover:bg-emerald-300 hover:bg-opacity-70"
+                class="mt-12 rounded-3xl border border-primary bg-quarternary dark:bg-red-500 px-12 py-4 font-mono text-base font-semibold text-primary dark:text-slate-50 transition duration-300 ease-in-out hover:bg-emerald-300 hover:bg-opacity-70"
                 >Resume</a
               >
             </div>
@@ -564,7 +564,7 @@
     <hr class="my-1" />
 
     <!-- client section start -->
-    <section id="client" class="bg-tertiary pt-24 pb-28 lg:pt-32 lg:pb-36 dark:bg-stone-900">
+    <section id="client" class="bg-tertiary pt-24 pb-28 lg:pt-32 lg:pb-36 dark:bg-zinc-600">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-w-xl mx-auto mb-4 text-center lg:mb-6">
@@ -574,7 +574,7 @@
             >
               Yang Pernah Bekerja Sama
             </h2>
-            <p class="text-md font-medium text-primary dark:text-zinc-200">
+            <p class="text-md font-medium text-primary dark:text-primary">
               Hubungan kerja sama yang baik telah dilakukan bersama pihak-pihak
               bersangkutan dengan lancar dengan tujuan bersama
             </p>
@@ -618,7 +618,7 @@
             </a>
             <a
               href=""
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-300 ease-in-out hover:scale-110 hover:opacity-100 hover:grayscale-0 hover:duration-500 hover:ease-in-out lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[140px] py-4 opacity-60 grayscale transition duration-300 ease-in-out hover:scale-110 hover:opacity-100 hover:grayscale-0 hover:duration-500 hover:ease-in-out lg:mx-6 xl:mx-8"
             >
               <img src="/dist/img/tiketTravel_logo.png" alt="tiketTravel" />
             </a>
@@ -757,17 +757,17 @@
     <hr class="my-1" />
 
     <!-- gallery section start -->
-    <section id="gallery" class="bg-primary pt-32 pb-32 dark:bg-slate-800">
+    <section id="gallery" class="bg-primary pt-32 pb-32 dark:bg-slate-400">
       <div class="container">
         <div class="w-full py-4 lg:px-20">
           <div class="mx-auto mb-12 max-w-xl text-center">
             <h4 class="mt-0 mb-3 text-lg font-bold text-secondary dark:text-red-500">Gallery</h4>
             <h2
-              class="mb-4 text-2xl font-bold text-secondary dark:text-slate-50 sm:text-2xl lg:text-3xl"
+              class="mb-4 text-2xl font-bold text-secondary dark:text-slate-900 sm:text-2xl lg:text-3xl"
             >
               My Gallery
             </h2>
-            <p class="text-md font-medium text-tertiary dark:text-zinc-400">
+            <p class="text-md font-medium text-tertiary dark:text-zinc-900">
               Hubungan kerja sama yang baik telah dilakukan bersama pihak-pihak
               bersangkutan dengan lancar dengan tujuan bersama
             </p>
@@ -1164,7 +1164,7 @@
     <!-- tombol up start -->
     <a
       href="#home"
-      class="fixed bottom-4 right-4 z-[9999] hidden rounded-full bg-slate-500 dark:bg-red-500 p-4 hover:animate-bounce"
+      class="fixed bottom-4 right-4 z-[9999] hidden rounded-full bg-quarternary ring-4 ring-zinc-100 dark:bg-red-500 p-4 hover:animate-bounce"
       id="to-top"
     >
       <span class="block items-center border-primary"
