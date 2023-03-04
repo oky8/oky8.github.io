@@ -11,6 +11,7 @@ module.exports = {
         primary: "#27272a",
         secondary: "#fde68a",
         tertiary: "#a8a29e",
+        quarternary:"#34d399",
       },
       screens: {
         "2xl": "1320px",
