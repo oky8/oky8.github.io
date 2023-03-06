@@ -4,12 +4,10 @@ window.onscroll = function () {
   const fixednav = header.offsetTop;
   const toTop = document.querySelector("#to-top");
 
-
   if (window.pageYOffset > fixednav) {
     header.classList.add("navbar-fixed");
     toTop.classList.remove("hidden");
     toTop.classList.add("flex");
-
   } else {
     header.classList.remove("navbar-fixed");
     toTop.classList.remove("flex");
@@ -35,18 +33,18 @@ window.addEventListener("click", function (e) {
 });
 
 // dark mode toggle
-const darkToggle = document.querySelector('#dark-toggle');
-const html = document.querySelector('html');
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
 
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
-    html.classList.add('dark');
-    localStorage.theme = 'dark';
-  }else{
-    html.classList.remove('dark');
-    localStorage.theme = 'light'; 
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
   }
-})
+});
 
 // pindahkan toggle sesuai data localstorage
 if (
@@ -58,3 +56,6 @@ if (
 } else {
   darkToggle.checked = false;
 }
+
+
+

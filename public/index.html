@@ -13,7 +13,8 @@
   document.documentElement.classList.add('dark')
 } else {
   document.documentElement.classList.remove('dark')
-}</script>
+}
+  </script>
   <!-- script darmode end -->
   <body>
     <!-- header start -->
@@ -145,6 +146,7 @@
               >
             </h2>
             <div class="w-8 py-8 duration-500 hover:-translate-y-3">
+              
               <a
                 href="#"
                 class="mt-12 rounded-3xl border border-primary bg-quarternary dark:bg-red-500 px-12 py-4 font-mono text-base font-semibold text-primary dark:text-slate-50 transition duration-300 ease-in-out hover:bg-emerald-300 hover:bg-opacity-70"
@@ -893,15 +895,15 @@
           </div>
         </div>
         <!-- isi form -->
-        <form>
+        <form action="https://formspree.io/f/xleknzqw" method="POST" id="contact-form">
           <div class="mx-auto w-full lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-semibold text-slate-700 dark:text-stone-50"
-                >Nama</label
+                >Nama Lengkap</label
               >
               <input
                 type="text"
-                id="name"
+                id="name" name="nama" placeholder="ex : Okky efand"
                 class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               />
             </div>
@@ -911,7 +913,17 @@
               >
               <input
                 type="email"
-                id="email"
+                id="email" name="email" placeholder="ex : abcd@gmial.com"
+                class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="phone" class="text-base font-semibold text-slate-700 dark:text-stone-50"
+                >Nomor Handphone</label
+              >
+              <input
+                type="number"
+                id="phone" name="phone" placeholder="ex : 0823xxxxxxxx"
                 class="focus: w-full rounded-md bg-tertiary p-3 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               />
             </div>
@@ -921,12 +933,12 @@
               >
               <textarea
                 type="text"
-                id="pesan"
+                id="pesan" name="pesan" placeholder="Tulis pesan anda ..."
                 class="focus: w-full rounded-md bg-tertiary p-4 text-black ring-1 dark:bg-emerald-200 dark:text-gray-800 focus:border-primary focus:outline-none focus:ring-primary"
               ></textarea>
             </div>
             <div class="w-full px-4">
-              <button
+              <button type="submit" 
                 class="w-full rounded-full bg-quarternary dark:bg-red-500 py-3 px-8 text-base font-bold text-primary transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg"
               >
                 Kirim
