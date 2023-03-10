@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- font link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@200;500;600;700&family=Genos:ital,wght@0,100;0,200;0,500;0,600;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font link end -->
+
+    <!-- link animatescc start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- link animatescc end -->
+
+    <title>Blog</title>
+  </head>
+  <!-- darkmode script start -->
+  <script>
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+  <!-- darkmode script end -->
+  <body class="font-anek">
+    <!-- header start -->
+    <header
+      class="animate__animated animate__fadeIn absolute top-0 left-0 z-10 flex w-full items-center bg-primary bg-transparent lg:bg-primary lg:dark:bg-black lg:dark:bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-1">
+            <a
+              href="#"
+              class="block py-6 text-lg font-bold text-tertiary duration-700 ease-in-out hover:-skew-y-6 hover:scale-110 hover:transition-all dark:text-slate-50"
+              ><span
+                class="border-4 border-double border-tertiary px-2 py-2 font-Genos dark:border-slate-50"
+                >OE-</span
+              ></a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="humberger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="humberger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="humberger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="humberger-line transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-primary py-5 shadow-lg dark:bg-black dark:shadow-md dark:shadow-stone-50 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent lg:dark:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#pemrograman"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Pemrograman</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#jenisProgrammer"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Jenis Programmer</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="/public/index.html"
+                    class="mx-8 flex py-2 text-base text-sky-600 group-hover:text-emerald-200 dark:text-blue-500 lg:text-xs"
+                    >Kembali</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="mx-8 flex hidden py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#gallery"
+                    class="mx-8 flex hidden py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex hidden py-2 text-base text-secondary group-hover:text-emerald-200 dark:text-slate-50 lg:text-xs"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mt-2 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-xs text-quarternary dark:text-white"
+                      >Light <span></span
+                    ></span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-quarternary p-1 dark:bg-red-500"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-xs text-quarternary dark:text-white"
+                      >Dark</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- blogme section start -->
+    <section class="body-font overflow-hidden bg-sky-300 text-gray-600 lg:pt-14">
+      <div class="container mx-auto px-5 py-24">
+        <div class="mx-auto flex flex-wrap lg:w-4/5">
+          <img
+            alt="ecommerce"
+            class="h-64 w-full rounded object-cover object-center lg:h-auto lg:w-1/2"
+            src="/dist/img/blog1.jpg"
+          />
+          <div class="mt-6 w-full lg:mt-0 lg:w-1/2 lg:py-6 lg:pl-10">
+            <h2 class="title-font text-sm tracking-widest text-gray-500">
+              12 Desember 2022
+            </h2>
+            <h1 class="title-font mb-1 text-2xl font-medium text-gray-900">
+              #Pemrograman : Apa itu pemrograman?
+            </h1>
+            <div class="mb-4 flex">
+              <div class="mb-3 flex items-center">
+                <div
+                  class="mr-3 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-white"
+                >
+                  <img src="/dist/img/pp.png" alt="" width="23" height="29" />
+                </div>
+                <h2 class="title-font text-lg font-medium text-gray-900">
+                  Okky Efand
+                </h2>
+              </div>
+              <span
+                class="space-x-2s ml-3 flex border-l-2 border-gray-200 py-2 pl-3"
+              >
+                <a href="https://www.facebook.com/okky.efand" class="text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5 hover:text-blue-700"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="text-gray-500" href="https://twitter.com/EfandOkky?t=SbFiKGnJzTOsTjcyKHritA&s=03">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5 hover:text-sky-600"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5 hover:text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+              <span
+                class="space-x-2s ml-3 flex border-l-2 border-gray-200 py-2 pl-3"
+              >
+              </span>
+            </div>
+            <p class="text-justify leading-relaxed">
+              Dilansir dari laman
+              <span class="font-bold hover:cursor-pointer hover:text-violet-500"
+                ><a href="https://id.wikipedia.org/wiki/Pemrograman"></a>
+                Wikipedia</span
+              >, pemrograman atau programming adalah proses menulis, menguji dan
+              memperbaiki (debug), dan memelihara kode yang membangun suatu
+              program komputer. Tujuan dari pemrograman adalah untuk memuat
+              suatu program yang dapat melakukan suatu perhitungan atau
+              ‘pekerjaan’ sesuai dengan keinginan pemrogram. Untuk melakukan
+              pemrograman, diperlukan keterampilan dalam algoritma, logika,
+              bahasa pemrograman, dan pada banyak kasus, pengetahuan-pengetahuan
+              lain seperti matematika.
+            </p>
+            <div
+              class="mt-6 mb-5 flex items-center border-b-2 border-gray-100 pb-5"
+            >
+              <div class="flex">
+                <span class="flex items-center">
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-4 w-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-4 w-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-4 w-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-4 w-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-4 w-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <span class="ml-3 text-gray-600">4 Reviews</span>
+                </span>
+              </div>
+            </div>
+            <div class="flex">
+              <a href="https://instagram.com/okkyefnd?igshid=ZDdkNTZiNTM="
+                class="ml-auto flex rounded border-0 bg-indigo-500 py-2 px-6 text-white hover:bg-indigo-600 focus:outline-none"
+              >
+                Follow
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogne section end -->
+
+    <!-- content section start -->
+    <section class="body-font text-gray-600 pt-20" id="pemrograman">
+      <div
+        class="container mx-auto flex flex-col items-center justify-center px-5 pt-16"
+      >
+        <img
+          class="mb-10 w-5/6 rounded object-cover object-center md:w-3/6 lg:w-2/6"
+          alt="hero"
+          src="/dist/img/blog1.jpg"
+        />
+        <div
+          class="mb-16 flex w-full flex-col items-center text-center md:w-2/3"
+        >
+          <h1
+            class="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            Apa itu pemrograman?
+          </h1>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Pemrograman adalah aktivitas membuat program komputer dengan barisan
+            kode. Jadi, tak heran kalau aktivitas ini sering disebut sebagai
+            coding atau ngoding.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Barisan kode yang dihasilkan bisa memberikan instruksi khusus ke
+            komputer. Mulai dari hal simpel seperti penjumlahan dua angka,
+            hingga hal kompleks seperti memprediksi cuaca esok hari.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Oh ya, kode tersebut mempunyai aturannya sendiri-sendiri yang
+            disebut sebagai bahasa pemrograman. Jenisnya sendiri ada banyak dan
+            selalu dikembangkan. Namun, bedakan kode yang digunakan dengan
+            pseudocode, ya?
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Nah, orang yang mampu berbahasa pemrograman dan memberikan instruksi
+            ke komputer disebut sebagai programmer.
+          </p>
+          <p class="mb-4 text-start text-xl leading-relaxed">
+            Pemrograman adalah aktivitas membuat program komputer dengan barisan
+            kode. Jadi, tak heran kalau aktivitas ini sering disebut sebagai
+            coding atau ngoding.
+          </p>
+        </div>
+      </div>
+      <div id="jenisProgrammer"
+        class="container mx-auto flex flex-col items-center justify-center px-5 py-4 scroll-mt-20"
+      >
+        <img
+          class="mb-10 w-5/6 rounded object-cover object-center md:w-3/6 lg:w-2/6"
+          alt="hero"
+          src="/dist/img/blog1.jpg"
+        />
+        <div
+          class="mb-16 flex w-full flex-col items-center text-center md:w-2/3"
+        >
+          <h1
+            class="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            Jenis-Jenis Programmer
+          </h1>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Ada beberapa jenis programmer sesuai program yang dibuat. Oleh
+            karena itu, sebelum Anda belajar pemrograman lebih jauh, sebaiknya
+            pelajari dulu perbedaan programmer.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Berikut beberapa jenis programmer terpopuler yang bisa Anda pilih:
+          </p>
+          <h2
+            class="mb-4 text-left text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            1. Web Developer
+          </h2>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Web developer bertugas untuk merancang dan membuat website.
+            Merekalah yang bertanggung jawab untuk memastikan bahwa tampilan
+            website jadi menarik dan semua fiturnya berfungsi dengan lancar.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Artinya, tanggung jawab web developer tak selesai begitu website
+            bisa diakses pengunjung. Mereka juga harus mengawasi website
+            tersebut apabila ada masalah dan memperbaikinya.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Karena kebutuhan website semakin kompleks, muncullah beberapa jenis
+            web developer sesuai keahliannya. Apa saja?
+          </p>
+          <!-- penjelasan macam programmer -->
+          <div
+            class="relative mx-auto flex pt-10 pb-20 sm:items-center md:w-2/3"
+          >
+            <div
+              class="absolute inset-0 flex h-full w-6 items-center justify-center"
+            >
+              <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+            </div>
+            <div
+              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-sm font-medium text-white sm:mt-0"
+            >
+              1
+            </div>
+            <div
+              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+            >
+              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                <h2 class="title-font mb-1 text-xl font-medium text-sky-600">
+                  Front End Developer
+                </h2>
+                <p class="leading-relaxed">
+                  mengurus tampilan website yang dilihat dan di klik pengunjung.
+                  Baik dari sisi desain maupun fungsionalitasnya
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
+            <div
+              class="absolute inset-0 flex h-full w-6 items-center justify-center"
+            >
+              <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+            </div>
+            <div
+              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-sm font-medium text-white sm:mt-0"
+            >
+              2
+            </div>
+            <div
+              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+            >
+              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                <h2 class="title-font mb-1 text-xl font-medium text-gray-900">
+                  Back End Developer
+                </h2>
+                <p class="leading-relaxed">
+                  memastikan bahwa server dan keseluruhan sistem website
+                  berfungsi normal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
+            <div
+              class="absolute inset-0 flex h-full w-6 items-center justify-center"
+            >
+              <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+            </div>
+            <div
+              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500 text-sm font-medium text-white sm:mt-0"
+            >
+              3
+            </div>
+            <div
+              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+            >
+              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                <h2 class="title-font mb-1 text-xl font-medium text-gray-900">
+                  Full Stack Developer
+                </h2>
+                <p class="leading-relaxed">
+                  manusia super yang paham front end dan back end sekaligus.
+                  Sangat langka populasinya dan diburu oleh banyak pihak.
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2
+            class="mb-4 text-left text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            2. Software Developer
+          </h2>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Software developer adalah orang yang merancang dan membuat perangkat
+            lunak untuk sistem komputer. Bisa untuk sistem operasi Windows,
+            MacOS, atau Linux.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Nah, karena saat ini pengguna Windows mencapai 76% dari seluruh
+            pengguna komputer, tak heran kalau kebutuhan akan programmer Windows
+            jadi lebih tinggi. Pun demikian, banyak software yang bersifat
+            multi-platform atau bisa digunakan di berbagai sistem operasi.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Sebab, setiap versi membutuhkan keahlian dan bahasa pemrograman yang
+            berbeda, codingnya bisa dilakukan oleh satu programmer atau lebih,
+            tergantung skill yang dimiliki.
+          </p>
+          <h2
+            class="mb-4 text-left text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            3. Mobile App Developer
+          </h2>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Mobile App Developer bertugas untuk merancang dan membuat aplikasi
+            perangkat mobile seperti smartphone dan tablet.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Dunia mobile app developer juga berkembang sangat cepat. Baik dari
+            bahasa pemrograman yang semakin banyak atau dari kebutuhan konsumen
+            yang semakin kompleks.
+          </p>
+          <h2
+            class="mb-4 text-left text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            4. Game Programmer
+          </h2>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Game programmer adalah orang yang melakukan coding untuk
+            menghasilkan sebuah video game yang nyaman dimainkan.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Dalam praktiknya, game programmer jarang bekerja sendiri. Ia akan
+            bekerja sama dengan animator, penulis cerita, pembuat musik, dan
+            lain. Ibarat jin dalam botol, game programmer akan mewujudkan
+            keinginan konsep dari game yang akan dibuat menjadi sebuah produk
+            yang baik.
+          </p>
+          <h2
+            class="mb-4 text-left text-3xl font-medium text-gray-900 sm:text-4xl"
+          >
+            5. Computer System Engineer
+          </h2>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Programmer jenis ini memastikan bahwa sistem komputer di suatu
+            perusahaan atau organisasi berjalan dengan lancar.
+          </p>
+          <p class="mb-8 text-start text-xl leading-relaxed">
+            Artinya, semua hal yang berhubungan dengan sistem komputer
+            —penggunaan teknologinya, keamanan, jaringan, software, hardware,
+            dan lain sebagainya— merupakan tanggung jawabnya.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- content section end -->
+
+    <!-- footer start -->
+    <footer class="bg-primary pt-12 pb-10 dark:bg-gray-900">
+      <div class="container">
+        <div class="flex flex-wrap lg:px-10 lg:py-4">
+          <div class="mb-12 w-full px-4 font-medium text-slate-200 md:w-1/3">
+            <h1
+              class="mb-4 text-xl font-bold text-secondary duration-500 hover:scale-105 dark:text-red-500"
+            >
+              Hubungi Saya
+            </h1>
+            <p
+              class="mb-2 duration-500 hover:translate-x-6 hover:text-emerald-400"
+            >
+              <a href="" class="flex"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  />
+                </svg>
+                okkyefand8@gmail.com</a
+              >
+            </p>
+            <p
+              class="mb-2 flex duration-500 hover:translate-x-6 hover:text-emerald-400"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                width="25"
+                class="mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Zingat</title>
+                <path
+                  d="M12.271.006A8.584 8.584 0 009.906.25a8.705 8.705 0 00-4.83 3.059 8.377 8.377 0 00-1.85 4.556 6.2 6.2 0 00.159 2.168 15.04 15.04 0 001.053 2.748 38.762 38.762 0 002.498 4.336A82.576 82.576 0 0011.994 24l.067-.074c.456-.574.923-1.14 1.363-1.725.789-1.048 1.562-2.11 2.34-3.168a1 1 0 00.21-.756.973.973 0 00-1.195-.802c-.307.077-.5.286-.675.527-.547.753-1.095 1.505-1.647 2.256-.147.2-.301.393-.488.553a64.17 64.17 0 01-4.38-6.356c-.763-1.28-1.47-2.589-2.007-3.98a8.079 8.079 0 01-.334-1.006c-.105-.44-.096-.892-.068-1.344a5.144 5.144 0 01.328-1.643c.244-.604.507-1.195.9-1.712a6.947 6.947 0 012.65-2.165c.788-.36 1.596-.62 2.47-.62a17.886 17.886 0 011.349.03 4.389 4.389 0 01.943.167c1.486.448 2.742 1.256 3.696 2.494a6.771 6.771 0 01.925 1.709 6.83 6.83 0 01.276.885 4.903 4.903 0 01.086.677c.044.494.063.99-.047 1.477-.079.324-.18.641-.305.951-.133.359-.281.71-.437 1.059V9.793a.835.835 0 00-.184-.56 2.57 2.57 0 00-.394-.354c-1.62-1.23-3.238-2.46-4.858-3.688a.964.964 0 00-1.168.006c-.212.161-.422.325-.633.487l-1.273.972V5.74c-.001-.088-.013-.175-.035-.261a.982.982 0 10-1.932.26V8.06a.169.169 0 01-.074.152c-.194.14-.379.284-.563.428l-.025.02a.98.98 0 00-.148 1.376c.339.422.956.49 1.378.152l3.825-2.92.006-.005a.102.102 0 01.144.006l2.268 1.734c.52.397 1.039.8 1.564 1.19a.293.293 0 01.135.275v4.83c0 .02.003.039.004.058a.97.97 0 00.01.123.97.97 0 000 .002c0 .007 0 .013.002.02a.981.981 0 00.015.072.981.981 0 00.028.094.981.981 0 00.037.09.981.981 0 001.8-.045l.03-.043c.314-.54.635-1.076.937-1.627.597-1.084 1.132-2.196 1.518-3.375a6.706 6.706 0 00.375-1.855 8 8 0 00-.338-2.561 8.497 8.497 0 00-2.943-4.338C15.986.7 14.227.076 12.272.006zM11.178 10.21a1.022 1.022 0 00-.996 1.047v1.615a1.024 1.024 0 001.039 1.002h1.61a1.02 1.02 0 001.019-1.023v-1.618a1.024 1.024 0 00-1.018-1.021h-.81v-.002zm.072.957h1.54c.074 0 .1.03.1.103v.778l.003.006c0 .248-.009.497 0 .74 0 .084-.026.115-.112.115h-1.529c-.08 0-.107-.027-.107-.107v-1.526c0-.077.023-.109.105-.109z"
+                />
+              </svg>
+              Jl.anggrek loka II, bsd, Tangerang Selatan.
+            </p>
+            <p
+              class="mb-2 flex duration-500 hover:translate-x-6 hover:text-emerald-400"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                width="20"
+                class="mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>WhatsApp</title>
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+              +6282286362864
+            </p>
+          </div>
+          <div
+            class="mb-12 w-full px-4 font-medium md:w-1/3 md:rounded-b-xl md:border-l-2 md:border-quarternary"
+          >
+            <h1
+              class="mb-4 text-xl font-semibold text-secondary duration-500 hover:scale-105 dark:text-red-500"
+            >
+              Kategori Tulisan
+            </h1>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Programming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Technology</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Gaya Hidup</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="mb-12 w-full px-4 font-medium md:w-1/3 md:rounded-b-xl md:border-l-2 md:border-quarternary"
+          >
+            <h1
+              class="mb-4 text-xl font-semibold text-secondary duration-500 hover:scale-105 dark:text-red-500"
+            >
+              Tautan
+            </h1>
+            <ul>
+              <li>
+                <a
+                  href="index.html"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Protofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#client"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Client</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-2 inline-block text-base text-slate-200 duration-500 hover:translate-x-6 hover:text-emerald-400"
+                  >Kontak Saya</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t-2 border-quarternary pt-4">
+          <div class="flex items-center justify-center">
+            <!-- icon linkedin -->
+            <a
+              href="https://www.linkedin.com/in/okkyEfand"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-quarternary hover:border-violet-400 hover:bg-primary hover:text-blue-600"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <!-- icon github -->
+            <a
+              href="https://github.com/oky8"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-quarternary hover:border-violet-400 hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="24"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <!-- icon instagram -->
+            <a
+              href="https://instagram.com/okkyefnd?igshid=ZDdkNTZiNTM="
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-quarternary hover:border-violet-400 hover:bg-primary hover:text-red-500"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <!-- icon codepen -->
+            <a
+              href="https://codepen.io/oky8"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-quarternary hover:border-violet-400 hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="24"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>CodePen</title>
+                <path
+                  d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"
+                />
+              </svg>
+            </a>
+            <!-- icon twitter -->
+            <a
+              href="https://twitter.com/EfandOkky?t=SbFiKGnJzTOsTjcyKHritA&s=03"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-quarternary hover:border-violet-400 hover:bg-primary hover:text-sky-400"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Twitter</title>
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="mt-4 mb-1 text-center font-sans text-xs text-emerald-400">
+          Dibuat oleh
+          <a
+            href="https://okkyefand8@gmail.com"
+            target="_blank"
+            class="text-tertiary hover:font-bold hover:text-gray-200"
+            >Okky Efand </a
+          >menggunakan
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            class="text-sky-500 hover:font-bold"
+          >
+            TailwindCss</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- tombol email start -->
+    <a
+      href="mailto:okkyefand8@gmail.com"
+      id="to-mail"
+      class="fixed bottom-1/3 right-4 z-[9999] hidden p-4 font-mono text-emerald-700 dark:text-emerald-400 lg:block"
+    >
+      <p class="to-mail">
+        <span>
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            width="25"
+            xmlns="http://www.w3.org/2000/svg"
+            class="rounded-md bg-slate-50 duration-500 hover:-translate-x-4 hover:-rotate-90 hover:text-white"
+          >
+            <title>Gmail</title>
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+            />
+          </svg>
+        </span>
+      </p>
+      <p
+        class="to-mail mt-4 duration-500 hover:-translate-y-4 hover:text-white"
+      >
+        okkyefand8@gmail.com
+      </p>
+      <p
+        class="mr-4 origin-top-right -rotate-90 rounded-l-xl border-t-4 border-emerald-700 p-4"
+      ></p>
+    </a>
+    <!-- tombol email end -->
+
+    <!-- tombol kembali start -->
+    <div
+      href="#home"
+      class="fixed bottom-1/3 left-4 z-[9999] hidden p-4 lg:block"
+      id="to-top"
+    >
+      <div class="hidden items-center space-y-2 border-primary lg:block">
+        <!-- icon kembali -->
+        <a
+          href="/public/index.html"
+          target="_blank"
+          class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border-2 border-quarternary text-quarternary duration-500 hover:translate-x-3 hover:border-white hover:bg-quarternary hover:text-blue-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.53 2.47a.75.75 0 010 1.06L4.81 8.25H15a6.75 6.75 0 010 13.5h-3a.75.75 0 010-1.5h3a5.25 5.25 0 100-10.5H4.81l4.72 4.72a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="fixed bottom-4 left-4 z-[9999] hidden p-4 lg:block">
+        <p
+          class="ml-5 origin-top-left rotate-90 rounded-r-xl border-t-4 border-emerald-700 p-24"
+        ></p>
+      </div>
+    </div>
+    <!-- tombol kembali end -->
+
+    <!-- tombol up start -->
+    <a
+      href="#"
+      class="fixed bottom-4 right-4 z-[9999] rounded-full bg-quarternary p-4 ring-4 ring-zinc-100 hover:animate-bounce dark:bg-red-500"
+      id="to-top"
+    >
+      <span class="block items-center border-primary"
+        ><svg
+          role="img"
+          width="20"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>ClickUp</title>
+          <path
+            d="M2 18.439l3.69-2.828c1.961 2.56 4.044 3.739 6.363 3.739 2.307 0 4.33-1.166 6.203-3.704L22 18.405C19.298 22.065 15.941 24 12.053 24 8.178 24 4.788 22.078 2 18.439zM12.04 6.15l-6.568 5.66-3.036-3.52L12.055 0l9.543 8.296-3.05 3.509z"
+          /></svg
+      ></span>
+    </a>
+    <!-- tombol up end -->
+  </body>
+  <script src="/dist/js/script.js"></script>
+</html>
