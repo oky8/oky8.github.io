@@ -14,6 +14,9 @@ module.exports = {
         tertiary: "#a8a29e",
         quarternary:"#34d399",
       },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
       fontFamily: {
         anek: ['Anek Gurmukhi'],
         Genos: ['Genos'],
